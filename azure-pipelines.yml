@@ -95,12 +95,12 @@ stages:
       - job: security_checks
         steps:
           - script: |
-            echo "Buscando contraseñas hardcodeadas..."
+              echo "Buscando contraseñas hardcodeadas..."
 
-            ! grep -R "password=" src/
-            ! grep -R "secret=" src/
-            ! grep -R "apikey=" src/
-            ! grep -R "token=" src/
+              ! grep -R "password=" src/
+              ! grep -R "secret=" src/
+              ! grep -R "apikey=" src/
+              ! grep -R "token=" src/
   # ==========================================
   # STAGE 3: APROBACIÓN MANUAL (APPROVAL)
   # ==========================================
